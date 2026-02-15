@@ -13,7 +13,7 @@ const projects = [
         id: 1,
         title: "Mojito - GSAP Portfolio",
         description: "A stunning portfolio website featuring advanced GSAP animations, smooth scroll effects, and interactive transitions that create an immersive user experience.",
-        image: "/images/project-gsap-portfolio.png",
+        image: "/images/project-mojito.png",
         link: "https://mojito-ecru.vercel.app/",
         github: "https://github.com/arabyhossainabid/jsm_gsap_landing",
         category: "GSAP",
@@ -53,7 +53,7 @@ const projects = [
         id: 5,
         title: "Spylt Landing Page",
         description: "Creative landing page with interactive GSAP animations, parallax effects, and engaging micro-interactions for enhanced user engagement.",
-        image: "/images/project-spylt-landing.png",
+        image: "/images/project-spylt.png",
         link: "https://spylt-bay.vercel.app/",
         github: "https://github.com/arabyhossainabid/gsap-spylt",
         category: "GSAP",
@@ -64,10 +64,20 @@ const projects = [
         title: "E-Commerce Dashboard",
         description: "Full-stack e-commerce admin dashboard with real-time analytics, inventory management, and order tracking built with Next.js and PostgreSQL.",
         image: "/images/Thumbnail.svg",
-        link: "https://fayrashop.vercel.app/",
-        github: "https://github.com/mdasif-me/fayrashop",
+        link: "https://fastefy.com/",
+        github: "https://github.com/mdasif-me/fastefy-csr",
         category: "Full-Stack",
-        tags: ["Next.js", "PostgreSQL", "Dashboard", "Analytics"]
+        tags: ["Next.js", "PostgreSQL", "Dashboard", "Radix UI", "shadcn ui", "Analytics"]
+    },
+    {
+        id: 7,
+        title: "FoodHub Zone",
+        description: "Full-stack food delivery platform with real-time order management, restaurant inventory tracking, and seamless checkout experience. Built with Next.js, PostgreSQL, Prisma ORM, and shadcn UI for a scalable, modern solution.",
+        image: "/images/project-foodhub-zone.png",
+        link: "https://foodhubzone.vercel.app/",
+        github: "https://github.com/arabyhossainabid/foodhub",
+        category: "Full-Stack",
+        tags: ["Next.js", "PostgreSQL", "prisma io", "shadcn ui"]
     }
 ];
 
