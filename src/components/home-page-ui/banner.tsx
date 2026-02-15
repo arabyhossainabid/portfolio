@@ -23,7 +23,7 @@ function Banner() {
     if (isDesktop) {
       const timer = setTimeout(() => {
         setShowHyperspeed(true);
-      }, 1500);
+      }, 3500); // 3.5s delay to ensure LCP and TBT are clear
       return () => clearTimeout(timer);
     }
   }, []);
