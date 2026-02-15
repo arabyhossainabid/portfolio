@@ -228,7 +228,7 @@ function Banner() {
 
       </div>
 
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden hidden md:block">
         <FloatingIcon icon={<Code2 />} delay={0} x="5%" y="20%" />
         <FloatingIcon icon={<Terminal />} delay={2} x="90%" y="15%" />
         <FloatingIcon icon={<Cpu />} delay={4} x="10%" y="80%" />

@@ -157,7 +157,13 @@ function HeroSection() {
           50% { background-position: 100% 50%; }
         }
         .animate-gradient {
-          animation: gradient 3s ease infinite;
+          background-size: 200% auto;
+          background-position: 0% 50%;
+        }
+        @media (min-width: 768px) {
+          .animate-gradient {
+            animation: gradient 3s ease infinite;
+          }
         }
       `}</style>
     </section>
