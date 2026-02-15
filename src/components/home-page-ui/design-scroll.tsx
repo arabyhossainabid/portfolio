@@ -181,7 +181,7 @@ function DesignScroll() {
                   >
                     {/* Animated Pattern */}
                     <div className="absolute inset-0 opacity-5">
-                      <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.1)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%] animate-shimmer" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer" />
                     </div>
 
                     {/* Decorative Circles */}
@@ -275,10 +275,10 @@ function DesignScroll() {
       <style jsx>{`
         @keyframes shimmer {
           0% {
-            background-position: -250% 0;
+            transform: translateX(-100%);
           }
           100% {
-            background-position: 250% 0;
+            transform: translateX(100%);
           }
         }
         .animate-shimmer {
