@@ -17,12 +17,15 @@ function Banner() {
   const [showHyperspeed, setShowHyperspeed] = useState(false);
   const words = ["Full-Stack Developer", "UI/UX Enthusiast", "Problem Solver", "Creative Thinker"];
 
-  // Load Hyperspeed with a delay to prioritize LCP
+  // Load Hyperspeed with a delay to prioritize LCP, but ONLY on desktop
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowHyperspeed(true);
-    }, 1500);
-    return () => clearTimeout(timer);
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    if (isDesktop) {
+      const timer = setTimeout(() => {
+        setShowHyperspeed(true);
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const socialLinks = [
