@@ -39,9 +39,9 @@ function HeroSection() {
       {/* Advanced Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#deff0008_1px,transparent_1px),linear-gradient(to_bottom,#deff0008_1px,transparent_1px)] bg-[size:80px_80px]" />
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[var(--neon-yellow)]/10 rounded-full blur-[150px] opacity-40 animate-pulse" />
-        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-purple-500/10 rounded-full blur-[150px] opacity-30 animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] opacity-20 animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-[10%] right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(222,255,0,0.08),transparent)]" />
+        <div className="absolute bottom-[10%] left-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(168,85,247,0.08),transparent)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(59,130,246,0.05),transparent)]" />
       </div>
 
       <div className="max-w-7xl w-full relative z-10">

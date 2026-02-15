@@ -35,8 +35,8 @@ function Topnotch() {
       {/* Advanced Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#deff0008,transparent_50%),radial-gradient(circle_at_70%_80%,#8b5cf608,transparent_50%)]" />
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[var(--neon-yellow)]/5 rounded-full blur-[120px] opacity-30 animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(222,255,0,0.05),transparent)]" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(59,130,246,0.05),transparent)]" />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">

@@ -17,9 +17,12 @@ function Banner() {
   const [showHyperspeed, setShowHyperspeed] = useState(false);
   const words = ["Full-Stack Developer", "UI/UX Enthusiast", "Problem Solver", "Creative Thinker"];
 
-  // Load Hyperspeed immediately after hydration
+  // Load Hyperspeed with a delay to prioritize LCP
   useEffect(() => {
-    setShowHyperspeed(true);
+    const timer = setTimeout(() => {
+      setShowHyperspeed(true);
+    }, 1500);
+    return () => clearTimeout(timer);
   }, []);
 
   const socialLinks = [
