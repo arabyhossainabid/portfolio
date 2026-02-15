@@ -63,7 +63,7 @@ const projects = [
         id: 6,
         title: "E-Commerce Dashboard",
         description: "Full-stack e-commerce admin dashboard with real-time analytics, inventory management, and order tracking built with Next.js and PostgreSQL.",
-        image: "/images/Thumbnail.svg",
+        image: "/images/project-fastefy.png",
         link: "https://fastefy.com/",
         github: "https://github.com/mdasif-me/fastefy-csr",
         category: "Full-Stack",
