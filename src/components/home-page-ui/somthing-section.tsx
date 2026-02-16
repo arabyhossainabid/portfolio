@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { Sparkles, ArrowRight, Code2, Rocket } from "lucide-react";
+import { Button } from "../ui/button";
 
 function SomthingSection() {
   const router = useRouter();
@@ -81,22 +82,24 @@ function SomthingSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-wrap gap-4 justify-center"
         >
-          <button
+          <Button
             onClick={handleProjectClick}
-            className="group px-8 py-4 bg-[var(--neon-yellow)] text-black font-bold rounded-full hover:shadow-[0_0_30px_0px_var(--neon-yellow)] transition-all duration-300 flex items-center gap-2"
+            variant="neon"
+            className="group px-8 py-4"
           >
             <Rocket className="w-5 h-5" />
             View My Work
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={handleContactClick}
-            className="group px-8 py-4 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 hover:border-[var(--neon-yellow)]/50 transition-all duration-300 flex items-center gap-2"
+            variant="glass"
+            className="group px-8 py-4"
           >
             <Code2 className="w-5 h-5" />
             Let&apos;s Talk
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Button>
         </motion.div>
 
         {/* Stats */}

@@ -1,9 +1,9 @@
-"use client";
 import React from "react";
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { Rocket, Sparkles, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function AboutBanner() {
   const router = useRouter();
@@ -55,20 +55,22 @@ export default function AboutBanner() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-wrap gap-4 justify-center mb-20"
           >
-            <button
+            <Button
               onClick={() => router.push("/projects")}
-              className="px-8 py-4 bg-[#deff00] text-black font-bold rounded-full hover:shadow-[0_0_30px_0px_#deff00] transition-all duration-300 flex items-center gap-2"
+              variant="neon"
+              className="px-8 py-4"
             >
               <Rocket className="w-5 h-5" />
               Start a Project
               <ArrowRight className="w-5 h-5" />
-            </button>
-            <button
+            </Button>
+            <Button
               onClick={() => router.push("/blog")}
-              className="px-8 py-4 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 hover:border-[#deff00]/50 transition-all duration-300"
+              variant="glass"
+              className="px-8 py-4"
             >
               View Portfolio
-            </button>
+            </Button>
           </motion.div>
         </div>
 

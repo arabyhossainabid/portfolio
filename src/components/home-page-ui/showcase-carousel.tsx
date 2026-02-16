@@ -140,13 +140,13 @@ export default function ShowcaseCarousel() {
                   {/* Hover Buttons */}
                   <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <Button size="sm" className="bg-[var(--neon-yellow)] text-black hover:bg-[var(--neon-yellow)]/90 font-bold shadow-lg">
+                      <Button size="sm" variant="neon" className="font-bold shadow-lg">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live
                       </Button>
                     </a>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Button size="sm" className="bg-white/20 text-white hover:bg-white/30 backdrop-blur-md border border-white/30">
+                      <Button size="sm" variant="outline-glass">
                         <Github className="w-4 h-4 mr-2" />
                         Code
                       </Button>
@@ -208,7 +208,8 @@ export default function ShowcaseCarousel() {
         >
           <Button
             onClick={() => router.push('/projects')}
-            className="px-10 py-6 bg-white/5 text-white hover:bg-white/10 border-2 border-white/10 hover:border-[var(--neon-yellow)]/50 rounded-full text-lg font-semibold backdrop-blur-sm"
+            variant="glass"
+            className="px-10 py-6 text-lg"
           >
             View All Projects →
           </Button>

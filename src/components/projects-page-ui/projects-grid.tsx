@@ -164,13 +164,13 @@ export default function ProjectsGrid() {
                                             className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end justify-center gap-3 pb-6"
                                         >
                                             <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                                <Button size="sm" className="bg-[var(--neon-yellow)] text-black hover:bg-[var(--neon-yellow)]/90">
+                                                <Button size="sm" variant="neon">
                                                     <ExternalLink className="w-4 h-4 mr-2" />
                                                     Live Demo
                                                 </Button>
                                             </a>
                                             <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                                <Button size="sm" variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                                                <Button size="sm" variant="outline-glass">
                                                     <Github className="w-4 h-4 mr-2" />
                                                     Code
                                                 </Button>
@@ -226,7 +226,7 @@ export default function ProjectsGrid() {
                     className="text-center mt-16"
                 >
                     <p className="text-gray-400 mb-6">Want to see more projects?</p>
-                    <Button className="bg-white/5 text-white hover:bg-white/10 border border-white/10 hover:border-[var(--neon-yellow)]/50 px-8 py-6 text-lg rounded-full">
+                    <Button variant="glass" className="px-8 py-6 text-lg">
                         <Filter className="w-5 h-5 mr-2" />
                         View All Projects
                     </Button>

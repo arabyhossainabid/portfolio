@@ -138,14 +138,16 @@ function Topnotch() {
                 <div className="flex flex-wrap gap-4 justify-center">
                   <Button
                     onClick={() => router.push('/contact')}
-                    className="group px-10 py-6 bg-[var(--neon-yellow)] text-black font-bold rounded-full hover:shadow-[0_0_40px_0px_var(--neon-yellow)] transition-all duration-300 text-lg"
+                    variant="neon"
+                    className="group px-10 py-6 text-lg"
                   >
                     Start Your Project
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                   <Button
                     onClick={() => router.push('/projects')}
-                    className="px-10 py-6 bg-white/10 text-white font-semibold rounded-full border-2 border-white/20 hover:bg-white/20 hover:border-[var(--neon-yellow)]/50 transition-all duration-300 text-lg backdrop-blur-sm"
+                    variant="glass"
+                    className="px-10 py-6 text-lg"
                   >
                     View Portfolio
                   </Button>

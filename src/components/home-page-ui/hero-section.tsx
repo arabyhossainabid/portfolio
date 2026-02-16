@@ -92,7 +92,8 @@ function HeroSection() {
           >
             <Button
               onClick={handleViewWork}
-              className="group px-8 py-6 bg-[var(--neon-yellow)] text-black font-bold rounded-full hover:shadow-[0_0_40px_0px_var(--neon-yellow)] transition-all duration-300 text-lg"
+              variant="neon"
+              className="group px-8 py-6 text-lg"
             >
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               View My Work
@@ -100,7 +101,8 @@ function HeroSection() {
             </Button>
             <Button
               onClick={handleDownloadCV}
-              className="group px-8 py-6 bg-white/5 text-white font-semibold rounded-full border-2 border-white/10 hover:bg-white/10 hover:border-[var(--neon-yellow)]/50 transition-all duration-300 text-lg backdrop-blur-sm"
+              variant="glass"
+              className="group px-8 py-6 text-lg"
             >
               <Download className="w-5 h-5 mr-2" />
               Download CV
