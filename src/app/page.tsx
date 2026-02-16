@@ -1,14 +1,14 @@
 import dynamic from "next/dynamic";
 import Banner from "@/components/home-page-ui/banner";
 import FadeUp from "@/components/home-page-ui/FadeUp";
+import HeroSection from "@/components/home-page-ui/hero-section";
 
 // Lazy load below-the-fold sections
-const HeroSection = dynamic(() => import("@/components/home-page-ui/hero-section"));
-const ShowcaseCarousel = dynamic(() => import("@/components/home-page-ui/showcase-carousel"));
-const Customers = dynamic(() => import("@/components/home-page-ui/customers"));
-const DesignScroll = dynamic(() => import("@/components/home-page-ui/design-scroll"));
-const SomthingSection = dynamic(() => import("@/components/home-page-ui/somthing-section"));
-const Topnotch = dynamic(() => import("@/components/home-page-ui/top–notch"));
+const ShowcaseCarousel = dynamic(() => import("@/components/home-page-ui/showcase-carousel"), { ssr: false });
+const Customers = dynamic(() => import("@/components/home-page-ui/customers"), { ssr: false });
+const DesignScroll = dynamic(() => import("@/components/home-page-ui/design-scroll"), { ssr: false });
+const SomthingSection = dynamic(() => import("@/components/home-page-ui/somthing-section"), { ssr: false });
+const Topnotch = dynamic(() => import("@/components/home-page-ui/top–notch"), { ssr: false });
 
 export default function Home() {
   return (

@@ -47,7 +47,7 @@ const projects = [
   }
 ];
 
-function Work() {
+const Work = React.memo(function Work() {
   return (
     <section className="bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
       {/* Background Effects */}
@@ -82,17 +82,20 @@ function Work() {
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
             >
-              <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-[var(--neon-yellow)]/30 transition-all duration-300 hover:-translate-y-2 group">
+              <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-[var(--neon-yellow)]/30 transition-all duration-300 hover:-translate-y-2 group will-change-transform">
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={600}
                     height={400}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    quality={85}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 will-change-transform"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center gap-3 pb-6">
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -133,6 +136,7 @@ function Work() {
       </div>
     </section>
   );
-}
+});
+
 
 export default Work;

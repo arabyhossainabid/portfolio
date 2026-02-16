@@ -14,11 +14,17 @@ export default function SplashCursorWrapper() {
     // Only load on desktop to save mobile resources
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
     if (isDesktop) {
-      // Delay loading to prioritize LCP and reduce TBT
-      const timer = setTimeout(() => {
-        setShouldRender(true);
-      }, 2500);
-      return () => clearTimeout(timer);
+      const loadWithIdle = () => {
+        if ('requestIdleCallback' in window) {
+          (window as any).requestIdleCallback(() => {
+            setTimeout(() => setShouldRender(true), 1000);
+          }, { timeout: 4000 });
+        } else {
+          setTimeout(() => setShouldRender(true), 4000);
+        }
+      };
+
+      loadWithIdle();
     }
   }, []);
 

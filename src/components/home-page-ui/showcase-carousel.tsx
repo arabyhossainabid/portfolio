@@ -56,18 +56,18 @@ const containerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
     },
   },
 };
 
 const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut" }
+    transition: { duration: 0.4, ease: "easeOut" }
   },
 };
 
@@ -120,7 +120,9 @@ export default function ShowcaseCarousel() {
                     alt={project.title}
                     width={400}
                     height={300}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    loading="lazy"
+                    quality={85}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 will-change-transform"
                   />
 

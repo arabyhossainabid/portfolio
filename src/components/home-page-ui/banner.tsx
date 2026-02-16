@@ -21,10 +21,17 @@ function Banner() {
   useEffect(() => {
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
     if (isDesktop) {
-      const timer = setTimeout(() => {
-        setShowHyperspeed(true);
-      }, 3500); // 3.5s delay to ensure LCP and TBT are clear
-      return () => clearTimeout(timer);
+      const loadWithIdle = () => {
+        if ('requestIdleCallback' in window) {
+          (window as any).requestIdleCallback(() => {
+            setTimeout(() => setShowHyperspeed(true), 1000);
+          }, { timeout: 5000 });
+        } else {
+          setTimeout(() => setShowHyperspeed(true), 5000);
+        }
+      };
+
+      loadWithIdle();
     }
   }, []);
 

@@ -75,9 +75,12 @@ export default function ProjectsGrid() {
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
-    const filteredProjects = selectedCategory === "All"
-        ? projects
-        : projects.filter(p => p.category === selectedCategory);
+    const filteredProjects = React.useMemo(() =>
+        selectedCategory === "All"
+            ? projects
+            : projects.filter(p => p.category === selectedCategory),
+        [selectedCategory]
+    );
 
     return (
         <section className="bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
@@ -132,11 +135,11 @@ export default function ProjectsGrid() {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
+                                transition={{ duration: 0.3, delay: index * 0.03 }}
                                 onHoverStart={() => setHoveredId(project.id)}
                                 onHoverEnd={() => setHoveredId(null)}
                             >
-                                <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-[var(--neon-yellow)]/30 transition-all duration-300 group h-full flex flex-col">
+                                <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-[var(--neon-yellow)]/30 transition-all duration-300 group h-full flex flex-col will-change-transform">
                                     {/* Image */}
                                     <div className="relative h-56 overflow-hidden">
                                         <Image
@@ -144,7 +147,10 @@ export default function ProjectsGrid() {
                                             alt={project.title}
                                             width={500}
                                             height={300}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                            loading="lazy"
+                                            quality={85}
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 will-change-transform"
                                         />
 
                                         {/* Overlay */}
