@@ -11,38 +11,40 @@ const projects = [
     id: 1,
     title: "Mojito",
     subtitle: "Dynamic About Page / Motion Effects",
-    img: "/images/project-mojito.png",
+    image: "/images/project-mojito.png",
     link: "https://mojito-ecru.vercel.app/",
-    github: "#",
+    github: "https://github.com/arabyhossainabid/jsm_gsap_landing",
     tags: ["GSAP", "React", "Animation"]
   },
   {
     id: 2,
     title: "Career Hub",
     subtitle: "Job Search Platform / Responsive UI",
-    img: "/images/project-career-hub.png",
+    image: "/images/project-career-hub.png",
     link: "https://react-career-hub-three.vercel.app/",
-    github: "#",
+    github: "https://github.com/arabyhossainabid/react-career-hub",
     tags: ["React", "UI/UX", "Platform"]
   },
   {
     id: 3,
     title: "Medical Service",
     subtitle: "NextUI / Tailwind / Validation",
-    img: "/images/project-medical-service.png",
+    image: "/images/project-medical-service.png",
     link: "/",
     github: "#",
     tags: ["Next.js", "Healthcare", "Forms"]
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    subtitle: "Next.js / Tailwind / Animation",
-    img: "/images/project-portfolio-v2.png",
-    link: "https://my-portfolio-sage-two.vercel.app/",
-    github: "#",
-    tags: ["Portfolio", "Next.js", "Design"]
-  },
+    title: "FoodHub Zone",
+    subtitle: "Full-Stack / Next.js / PostgreSQL / Prisma",
+    description: "Full-stack food delivery platform with real-time order management, restaurant inventory tracking, and seamless checkout experience. Built with Next.js, PostgreSQL, Prisma ORM, and shadcn UI for a scalable, modern solution.",
+    image: "/images/project-foodhub-zone.png",
+    link: "https://foodhubzone.vercel.app/",
+    github: "https://github.com/arabyhossainabid/foodhub",
+    category: "Full-Stack",
+    tags: ["Next.js", "PostgreSQL", "prisma io", "shadcn ui"]
+  }
 ];
 
 function Work() {
@@ -86,7 +88,7 @@ function Work() {
               <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-[var(--neon-yellow)]/30 transition-all duration-300 hover:-translate-y-2 group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={project.img}
+                    src={project.image}
                     alt={project.title}
                     width={600}
                     height={400}

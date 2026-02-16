@@ -14,7 +14,7 @@ const projects = [
     description: "Stunning portfolio with advanced GSAP animations and smooth scroll effects",
     image: "/images/project-mojito.png",
     link: "https://mojito-ecru.vercel.app/",
-    github: "#",
+    github: "https://github.com/arabyhossainabid/gsap-mojito",
     tags: ["GSAP", "React", "Animation"],
     stats: { stars: 24, views: "1.2k", forks: 8 }
   },
@@ -24,7 +24,7 @@ const projects = [
     description: "Job search platform with advanced filtering and application tracking",
     image: "/images/project-career-hub.png",
     link: "https://react-career-hub-three.vercel.app/",
-    github: "#",
+    github: "https://github.com/arabyhossainabid/react-career-hub",
     tags: ["React", "UI/UX", "Platform"],
     stats: { stars: 18, views: "980", forks: 5 }
   },
@@ -40,21 +40,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "Personal Portfolio V2",
-    description: "Modern portfolio with smooth animations and dark mode",
-    image: "/images/project-portfolio-v2.png",
-    link: "https://my-portfolio-sage-two.vercel.app/",
-    github: "#",
-    tags: ["Portfolio", "Next.js", "Framer Motion"],
-    stats: { stars: 15, views: "750", forks: 4 }
-  },
-  {
-    id: 5,
     title: "Spylt Landing Page",
     description: "Creative landing page with interactive GSAP animations",
     image: "/images/project-spylt.png",
     link: "https://spylt-bay.vercel.app/",
-    github: "#",
+    github: "https://github.com/arabyhossainabid/gsap-spylt",
     tags: ["GSAP", "Landing", "Creative"],
     stats: { stars: 28, views: "1.1k", forks: 9 }
   },

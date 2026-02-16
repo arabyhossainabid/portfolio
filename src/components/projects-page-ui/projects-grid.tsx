@@ -40,16 +40,6 @@ const projects = [
         tags: ["Next.js", "Healthcare", "Forms", "Validation"]
     },
     {
-        id: 4,
-        title: "Personal Portfolio V2",
-        description: "Modern portfolio website showcasing projects and skills with smooth animations, dark mode, and optimized performance using Next.js.",
-        image: "/images/project-portfolio-v2.png",
-        link: "https://my-portfolio-sage-two.vercel.app/",
-        github: "https://github.com/arabyhossainabid/my-portfolio",
-        category: "Next.js",
-        tags: ["Portfolio", "Next.js", "Design", "Framer Motion"]
-    },
-    {
         id: 5,
         title: "Spylt Landing Page",
         description: "Creative landing page with interactive GSAP animations, parallax effects, and engaging micro-interactions for enhanced user engagement.",
