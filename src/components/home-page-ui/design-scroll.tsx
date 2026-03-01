@@ -85,7 +85,6 @@ function DesignScroll() {
             </span>{" "}
             as a
             <br />
-            <br />
             Frontend{" "}
             <span className="bg-linear-to-r from-[var(--neon-yellow)] to-yellow-300 bg-clip-text text-transparent">
               Developer
