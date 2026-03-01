@@ -29,6 +29,20 @@ export const metadata: Metadata = {
     title: "Araby Hossain Abid - Full-Stack Developer",
     description: "Skilled full-stack web developer specializing in modern web technologies",
     type: "website",
+    images: [
+      {
+        url: "/images/og-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Araby Hossain Abid Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Araby Hossain Abid - Full-Stack Developer",
+    description: "Skilled full-stack web developer specializing in modern web technologies",
+    images: ["/images/og-preview.png"],
   },
 };
 
