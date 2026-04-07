@@ -38,7 +38,7 @@ const ContactMe = () => {
             form,
             "ek2-41K2axtsA78eW"   // Public Key
         )
-            .then((response) => {
+            .then(() => {
                 setSubmitStatus("success");
                 setIsSubmitting(false);
 
@@ -59,8 +59,8 @@ const ContactMe = () => {
     return (
         <section className="min-h-screen flex items-center justify-center bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute -top-10 -right-10 w-96 h-96 bg-[var(--neon-yellow)]/5 rounded-full blur-3xl opacity-30" />
-                <div className="absolute -bottom-10 -left-10 w-96 h-96 bg-[var(--neon-yellow)]/5 rounded-full blur-3xl opacity-30" />
+                <div className="absolute -top-10 -right-10 w-96 h-96 bg-(--neon-yellow)/5 rounded-full blur-3xl opacity-30" />
+                <div className="absolute -bottom-10 -left-10 w-96 h-96 bg-(--neon-yellow)/5 rounded-full blur-3xl opacity-30" />
             </div>
 
             <div className="max-w-6xl w-full grid lg:grid-cols-2 gap-12 lg:gap-20">
@@ -72,7 +72,7 @@ const ContactMe = () => {
                 >
                     <div className="space-y-4">
                         <h2 className="text-4xl md:text-5xl font-bold text-white">
-                            Let&apos;s <span className="text-[var(--neon-yellow)]">Connect</span>
+                            Let&apos;s <span className="text-(--neon-yellow)">Connect</span>
                         </h2>
                         <p className="text-gray-400 text-lg">
                             Have a project in mind? I&apos;m always open to discussing new ideas.
@@ -89,9 +89,9 @@ const ContactMe = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2 + i * 0.1 }}
-                                className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[var(--neon-yellow)]/50 transition-all group"
+                                className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-(--neon-yellow)/50 transition-all group"
                             >
-                                <div className="p-3 rounded-full bg-[var(--neon-yellow)]/10 text-[var(--neon-yellow)] group-hover:bg-[var(--neon-yellow)] group-hover:text-black transition-colors">
+                                <div className="p-3 rounded-full bg-(--neon-yellow)/10 text-(--neon-yellow) group-hover:bg-(--neon-yellow) group-hover:text-black transition-colors">
                                     <item.icon className="w-6 h-6" />
                                 </div>
                                 <div>
@@ -111,7 +111,7 @@ const ContactMe = () => {
                                 rel="noreferrer"
                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="p-3 rounded-full bg-white/5 border border-white/10 hover:border-[var(--neon-yellow)] hover:text-[var(--neon-yellow)] text-gray-300 transition-colors"
+                                className="p-3 rounded-full bg-white/5 border border-white/10 hover:border-(--neon-yellow) hover:text-(--neon-yellow) text-gray-300 transition-colors"
                             >
                                 <social.icon className="w-5 h-5" />
                             </motion.a>
@@ -137,7 +137,7 @@ const ContactMe = () => {
                                             required
                                             name="name"
                                             placeholder="Your Name"
-                                            className="bg-black/50 border-white/10 focus-visible:ring-[var(--neon-yellow)] text-white"
+                                            className="bg-black/50 border-white/10 focus-visible:ring--(--neon-yellow) text-white"
                                             disabled={isSubmitting}
                                         />
                                     </div>
@@ -148,7 +148,7 @@ const ContactMe = () => {
                                             name="email"
                                             type="email"
                                             placeholder="Your Email"
-                                            className="bg-black/50 border-white/10 focus-visible:ring-[var(--neon-yellow)] text-white"
+                                            className="bg-black/50 border-white/10 focus-visible:ring--(--neon-yellow) text-white"
                                             disabled={isSubmitting}
                                         />
                                     </div>
@@ -159,7 +159,7 @@ const ContactMe = () => {
                                         required
                                         name="subject"
                                         placeholder="Subject"
-                                        className="bg-black/50 border-white/10 focus-visible:ring-[var(--neon-yellow)] text-white"
+                                        className="bg-black/50 border-white/10 focus-visible:ring--(--neon-yellow) text-white"
                                         disabled={isSubmitting}
                                     />
                                 </div>
@@ -170,7 +170,7 @@ const ContactMe = () => {
                                         name="message"
                                         placeholder="Your Message"
                                         rows={5}
-                                        className="bg-black/50 border-white/10 focus-visible:ring-[var(--neon-yellow)] text-white resize-none"
+                                        className="bg-black/50 border-white/10 focus-visible:ring--(--neon-yellow) text-white resize-none"
                                         disabled={isSubmitting}
                                     />
                                 </div>
@@ -204,7 +204,7 @@ const ContactMe = () => {
                                 <Button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-[var(--neon-yellow)] h-14 text-lg text-black hover:bg-[var(--neon-yellow)]/90 font-bold rounded-full shadow-[0_0_0px_0_var(--neon-yellow)] hover:shadow-[0_0_15px_0px_var(--neon-yellow)] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full bg-(--neon-yellow) h-14 text-lg text-black hover:bg-(--neon-yellow)/90 font-bold rounded-full shadow-[0_0_0px_0_var(--neon-yellow)] hover:shadow-[0_0_15px_0px_var(--neon-yellow)] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     {isSubmitting ? (
                                         <>

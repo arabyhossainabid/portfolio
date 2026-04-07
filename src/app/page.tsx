@@ -12,7 +12,7 @@ const Topnotch = dynamic(() => import("@/components/home-page-ui/top–notch"));
 
 export default function Home() {
   return (
-    <section className="overflow-hidden">
+    <main className="min-h-screen bg-[#0d0d0d]">
       <Banner />
 
       <FadeUp delay={0}>
@@ -38,6 +38,6 @@ export default function Home() {
       <FadeUp delay={0.3}>
         <SomthingSection />
       </FadeUp>
-    </section>
+    </main>
   );
 }

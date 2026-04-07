@@ -94,7 +94,7 @@ function AboutTopNotch() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Card className="bg-gradient-to-br from-[#deff00]/10 to-purple-500/10 border-[#deff00]/20 overflow-hidden">
+          <Card className="bg-linear-to-br from-[#deff00]/10 to-purple-500/10 border-[#deff00]/20 overflow-hidden">
             <CardContent className="p-12 md:p-16 flex flex-col lg:flex-row justify-between items-center gap-8">
               <div className="text-center lg:text-left max-w-2xl">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">

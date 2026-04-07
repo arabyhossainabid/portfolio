@@ -16,7 +16,7 @@ export default function SplashCursorWrapper() {
     if (isDesktop) {
       const loadWithIdle = () => {
         if ('requestIdleCallback' in window) {
-          (window as any).requestIdleCallback(() => {
+          window.requestIdleCallback(() => {
             setTimeout(() => setShouldRender(true), 1000);
           }, { timeout: 4000 });
         } else {

@@ -70,8 +70,8 @@ export default function Customers() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[var(--neon-yellow)]/20 to-purple-500/20 border border-[var(--neon-yellow)]/30 mb-8 backdrop-blur-sm">
-            <ThumbsUp className="w-4 h-4 text-[var(--neon-yellow)]" />
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-linear-to-r from-(--neon-yellow)/20 to-purple-500/20 border border-(--neon-yellow)/30 mb-8 backdrop-blur-sm">
+            <ThumbsUp className="w-4 h-4 text-(--neon-yellow)" />
             <span className="text-sm font-semibold text-white">
               Client Testimonials
             </span>
@@ -79,13 +79,13 @@ export default function Customers() {
 
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             What{" "}
-            <span className="bg-gradient-to-r from-[var(--neon-yellow)] to-yellow-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-(--neon-yellow) to-yellow-300 bg-clip-text text-transparent">
               Clients
             </span>{" "}
             Say
             <br />
             About My{" "}
-            <span className="bg-gradient-to-r from-[var(--neon-yellow)] to-yellow-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-(--neon-yellow) to-yellow-300 bg-clip-text text-transparent">
               Work
             </span>
           </h2>
@@ -104,13 +104,13 @@ export default function Customers() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="bg-gradient-to-br from-white/10 to-white/5 border-white/10 h-full hover:border-[var(--neon-yellow)]/40 transition-all duration-500 hover:-translate-y-3 group backdrop-blur-sm relative overflow-hidden">
+              <Card className="bg-linear-to-br from-white/10 to-white/5 border-white/10 h-full hover:border-(--neon-yellow)/40 transition-all duration-500 hover:-translate-y-3 group backdrop-blur-sm relative overflow-hidden">
                 {/* Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--neon-yellow)]/0 to-[var(--neon-yellow)]/0 group-hover:from-[var(--neon-yellow)]/5 group-hover:to-transparent transition-all duration-500" />
+                <div className="absolute inset-0 bg-linear-to-br from-(--neon-yellow)/0 to-(--neon-yellow)/0 group-hover:from-(--neon-yellow)/5 group-hover:to-transparent transition-all duration-500" />
 
                 {/* Decorative Quote */}
                 <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Quote className="w-24 h-24 text-[var(--neon-yellow)]" />
+                  <Quote className="w-24 h-24 text-(--neon-yellow)" />
                 </div>
 
                 <CardContent className="p-8 flex flex-col h-full relative z-10">
@@ -122,7 +122,7 @@ export default function Customers() {
                         size={20}
                         className={
                           idx < testimonial.rating
-                            ? "text-[var(--neon-yellow)] fill-[var(--neon-yellow)]"
+                            ? "text-(--neon-yellow) fill--(--neon-yellow)"
                             : "text-gray-600"
                         }
                       />
@@ -156,7 +156,7 @@ export default function Customers() {
                         )}
                       </div>
                       <div>
-                        <h4 className="font-bold text-white group-hover:text-[var(--neon-yellow)] transition-colors flex items-center gap-2">
+                        <h4 className="font-bold text-white group-hover:text-(--neon-yellow) transition-colors flex items-center gap-2">
                           {testimonial.name}
                         </h4>
                         <p className="text-gray-400 text-sm">{testimonial.role}</p>
@@ -166,7 +166,7 @@ export default function Customers() {
 
                     {/* Likes */}
                     <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                      <ThumbsUp className="w-3.5 h-3.5 text-[var(--neon-yellow)]" />
+                      <ThumbsUp className="w-3.5 h-3.5 text-(--neon-yellow)" />
                       <span className="text-sm font-medium text-white">
                         {testimonial.likes}
                       </span>
@@ -186,7 +186,7 @@ export default function Customers() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20"
         >
-          <Card className="bg-gradient-to-br from-[var(--neon-yellow)]/15 via-purple-500/10 to-blue-500/10 border-[var(--neon-yellow)]/30 backdrop-blur-sm">
+          <Card className="bg-linear-to-br from-(--neon-yellow)/15 via-purple-500/10 to-blue-500/10 border-(--neon-yellow)/30 backdrop-blur-sm">
             <CardContent className="p-12">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 {[
@@ -202,7 +202,7 @@ export default function Customers() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.5 + i * 0.1 }}
                   >
-                    <div className="text-4xl md:text-5xl font-bold text-[var(--neon-yellow)] mb-2">
+                    <div className="text-4xl md:text-5xl font-bold text-(--neon-yellow) mb-2">
                       {stat.value}
                     </div>
                     <div className="text-sm text-gray-400">{stat.label}</div>

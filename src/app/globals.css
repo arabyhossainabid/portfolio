@@ -100,9 +100,10 @@ body {
     @apply bg-background text-foreground;
   }
 
-  /* Performance optimizations */
+  /* Performance optimizations and typography scaling */
   html {
     scroll-behavior: smooth;
+    font-size: 87.5%; /* Changes base size to 14px instead of 16px. Makes all text and elements smaller, feeling like a normal website */
   }
 
   /* Optimize animations for performance */

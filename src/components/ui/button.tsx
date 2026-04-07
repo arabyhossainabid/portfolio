@@ -21,9 +21,9 @@ const buttonVariants = cva(
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         neon:
-          "bg-[var(--neon-yellow)] text-black font-bold rounded-full hover:shadow-[0_0_40px_rgba(222,255,0,0.5)] hover:scale-105 active:scale-95 transition-all duration-300",
+          "bg-(--neon-yellow) text-black font-bold rounded-full hover:shadow-[0_0_40px_rgba(222,255,0,0.5)] hover:scale-105 active:scale-95 transition-all duration-300",
         glass:
-          "bg-white/5 text-white font-semibold rounded-full border-2 border-white/10 hover:bg-white/10 hover:border-[var(--neon-yellow)]/50 backdrop-blur-sm transition-all duration-300",
+          "bg-white/5 text-white font-semibold rounded-full border-2 border-white/10 hover:bg-white/10 hover:border-(--neon-yellow)/50 backdrop-blur-sm transition-all duration-300",
         "outline-glass":
           "bg-transparent text-white rounded-full border border-white/20 hover:bg-white/5 hover:border-white/30 backdrop-blur-sm transition-all duration-300",
       },

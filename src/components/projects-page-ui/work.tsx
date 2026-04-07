@@ -52,7 +52,7 @@ const Work = React.memo(function Work() {
     <section className="bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-[var(--neon-yellow)]/5 rounded-full blur-[100px] opacity-30" />
+        <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-(--neon-yellow)/5 rounded-full blur-[100px] opacity-30" />
         <div className="absolute bottom-1/3 left-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[100px] opacity-20" />
       </div>
 
@@ -65,14 +65,14 @@ const Work = React.memo(function Work() {
           className="mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
-            <Sparkles className="w-4 h-4 text-[var(--neon-yellow)]" />
+            <Sparkles className="w-4 h-4 text-(--neon-yellow)" />
             <span className="text-sm text-gray-300">Portfolio</span>
           </div>
 
           <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-            Take <span className="text-[var(--neon-yellow)]">a Look</span> at
+            Take <span className="text-(--neon-yellow)">a Look</span> at
             <br />
-            My <span className="text-[var(--neon-yellow)]">Past</span> Work
+            My <span className="text-(--neon-yellow)">Past</span> Work
           </h2>
         </motion.div>
 
@@ -85,7 +85,7 @@ const Work = React.memo(function Work() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
             >
-              <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-[var(--neon-yellow)]/30 transition-all duration-300 hover:-translate-y-2 group will-change-transform">
+              <Card className="bg-white/5 border-white/10 overflow-hidden hover:border-(--neon-yellow)/30 transition-all duration-300 hover:-translate-y-2 group will-change-transform">
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src={project.image}
@@ -97,7 +97,7 @@ const Work = React.memo(function Work() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 will-change-transform"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center gap-3 pb-6">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center gap-3 pb-6">
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <Button size="sm" variant="neon">
                         <ExternalLink className="w-4 h-4 mr-2" />
@@ -114,7 +114,7 @@ const Work = React.memo(function Work() {
                 </div>
 
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[var(--neon-yellow)] transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-(--neon-yellow) transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-400 text-sm mb-4">{project.subtitle}</p>
@@ -122,7 +122,7 @@ const Work = React.memo(function Work() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 rounded-full bg-[var(--neon-yellow)]/10 text-[var(--neon-yellow)] text-xs font-medium border border-[var(--neon-yellow)]/20"
+                        className="px-3 py-1 rounded-full bg-(--neon-yellow)/10 text-(--neon-yellow) text-xs font-medium border border-(--neon-yellow)/20"
                       >
                         {tag}
                       </span>
