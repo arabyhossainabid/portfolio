@@ -18,10 +18,10 @@ function SomthingSection() {
   };
 
   return (
-    <section className="min-h-screen bg-[#0d0d0d] py-20 px-4 relative overflow-hidden flex items-center justify-center">
+    <section className="min-h-screen bg-[#0d0d0d] py-16 px-4 relative overflow-hidden flex items-center justify-center">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[64px_64px]" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-(--neon-yellow)/10 rounded-full blur-[150px] opacity-30" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-[120px] opacity-20" />
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] opacity-20" />
@@ -37,7 +37,7 @@ function SomthingSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
             <Sparkles className="w-4 h-4 text-(--neon-yellow)" />
-            <span className="text-sm text-gray-300">Available for new projects</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-gray-300">Available for new projects</span>
           </div>
         </motion.div>
 
@@ -46,7 +46,7 @@ function SomthingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-8"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"
         >
           Hi, I&apos;m{" "}
           <span className="text-(--neon-yellow) inline-block">
@@ -108,12 +108,12 @@ function SomthingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-20 max-w-3xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-12 max-w-3xl mx-auto"
         >
           {[
-            { number: "50+", label: "Projects Completed" },
-            { number: "30+", label: "Happy Clients" },
-            { number: "2+", label: "Years Experience" },
+            { number: "8", label: "Projects Completed" },
+            { number: "1", label: "Happy Client" },
+            { number: "2+", label: "Year Experience" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-(--neon-yellow) mb-2">

@@ -9,7 +9,7 @@ export default function AboutBanner() {
   const router = useRouter();
 
   return (
-    <section className="min-h-screen bg-[#0d0d0d] py-20 px-4 relative overflow-hidden flex items-center">
+    <section className="min-h-screen bg-[#0d0d0d] py-16 px-4 relative overflow-hidden flex items-center">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#deff00]/10 rounded-full blur-[120px] opacity-40" />
@@ -25,14 +25,14 @@ export default function AboutBanner() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8"
           >
             <Sparkles className="w-4 h-4 text-[#deff00]" />
-            <span className="text-sm text-gray-300">About Me</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-gray-300">About Me</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Turning Ideas into
             <br />
@@ -53,7 +53,7 @@ export default function AboutBanner() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-4 justify-center mb-20"
+            className="flex flex-wrap gap-4 justify-center mb-12"
           >
             <Button
               onClick={() => router.push("/projects")}

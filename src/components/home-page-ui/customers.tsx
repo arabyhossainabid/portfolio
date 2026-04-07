@@ -68,16 +68,16 @@ export default function Customers() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-linear-to-r from-(--neon-yellow)/20 to-purple-500/20 border border-(--neon-yellow)/30 mb-8 backdrop-blur-sm">
             <ThumbsUp className="w-4 h-4 text-(--neon-yellow)" />
-            <span className="text-sm font-semibold text-white">
+            <span className="text-sm font-bold uppercase tracking-widest text-white">
               Client Testimonials
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             What{" "}
             <span className="bg-linear-to-r from-(--neon-yellow) to-yellow-300 bg-clip-text text-transparent">
               Clients
@@ -133,7 +133,7 @@ export default function Customers() {
                   </div>
 
                   {/* Review */}
-                  <p className="text-gray-300 leading-relaxed mb-6 flex-grow text-base">
+                  <p className="text-gray-300 leading-relaxed mb-6 grow text-base">
                     &quot;{testimonial.review}&quot;
                   </p>
 
@@ -190,9 +190,9 @@ export default function Customers() {
             <CardContent className="p-12">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 {[
-                  { value: "4.9/5", label: "Average Rating" },
-                  { value: "30+", label: "Happy Clients" },
-                  { value: "155", label: "Total Reviews" },
+                  { value: "5.0/5", label: "Average Rating" },
+                  { value: "1", label: "Happy Client" },
+                  { value: "3", label: "Projects Completed" },
                   { value: "100%", label: "Satisfaction" },
                 ].map((stat, i) => (
                   <motion.div

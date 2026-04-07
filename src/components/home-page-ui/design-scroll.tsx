@@ -45,12 +45,23 @@ const journey = [
     icon: Lightbulb,
     title: "Problem Solving & Innovation",
     description:
-      "I tackle complex frontend challenges with innovative solutions, ensuring every project not only works flawlessly but also pushes the boundaries of modern web development with technical excellence.",
+      "I tackle complex frontend challenges with innovative solutions, ensuring every project not only works flawlessly but also pushes the boundaries of modern web development.",
     image: "/images/tech_problem.svg",
     color: "#06b6d4",
     gradient: "from-cyan-500/20 to-transparent",
     bgClass: "bg-[#141C24]",
     skills: ["Algorithm Design", "Code Optimization", "Logic Implementation", "Best Practices"],
+  },
+  {
+    icon: Rocket,
+    title: "Backend Foundations",
+    description:
+      "I have successfully completed my backend learning journey and am capable of building scalable APIs with Node.js and Express. I have already applied these skills in 3 completed projects.",
+    image: "/images/tech_backend.png",
+    color: "#deff00",
+    gradient: "from-(--neon-yellow)/20 to-transparent",
+    bgClass: "bg-[#1A1A0D]",
+    skills: ["Node.js & Express", "PostgreSQL", "REST APIs", "Prisma ORM"],
   },
 ];
 
@@ -64,7 +75,7 @@ function DesignScroll() {
   });
 
   return (
-    <section ref={container} className="min-h-screen bg-[#0d0d0d] pt-20 pb-10 px-4 relative">
+    <section ref={container} className="min-h-screen bg-[#0d0d0d] pt-16 pb-12 px-4 relative">
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#deff0005,transparent_70%)]" />
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-(--neon-yellow)/5 rounded-full blur-[120px] opacity-30 animate-pulse" />
@@ -80,14 +91,14 @@ function DesignScroll() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-10 md:mb-20"
+          className="text-center mb-10 md:mb-12"
         >
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-linear-to-r from-(--neon-yellow)/20 to-purple-500/20 border border-(--neon-yellow)/30 mb-8 backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-(--neon-yellow)" />
-            <span className="text-sm font-semibold text-white">My Expertise</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-white">My Expertise</span>
           </div>
 
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             My{" "}
             <span className="bg-linear-to-r from-(--neon-yellow) to-yellow-300 bg-clip-text text-transparent">
               Journey

@@ -31,7 +31,7 @@ function Topnotch() {
   const router = useRouter();
 
   return (
-    <section className="min-h-screen bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
+    <section className="min-h-screen bg-[#0d0d0d] py-16 px-4 relative overflow-hidden">
       {/* Advanced Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#deff0008,transparent_50%),radial-gradient(circle_at_70%_80%,#8b5cf608,transparent_50%)]" />
@@ -45,14 +45,14 @@ function Topnotch() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-linear-to-r from-(--neon-yellow)/20 to-purple-500/20 border border-(--neon-yellow)/30 mb-8 backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-(--neon-yellow)" />
-            <span className="text-sm font-semibold text-white">What I Offer</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-white">What I Offer</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Top-<span className="bg-linear-to-r from-(--neon-yellow) to-yellow-300 bg-clip-text text-transparent">Notch</span> Solutions,
             <br />
             Delivered with <span className="bg-linear-to-r from-(--neon-yellow) to-yellow-300 bg-clip-text text-transparent">Precision</span>
@@ -64,7 +64,7 @@ function Topnotch() {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -101,7 +101,7 @@ function Topnotch() {
                         transition={{ delay: 0.5 + i * 0.1 }}
                         className="flex items-center gap-2 text-sm text-gray-300"
                       >
-                        <CheckCircle2 className="w-4 h-4 text-(--neon-yellow) flex-shrink-0" />
+                        <CheckCircle2 className="w-4 h-4 text-(--neon-yellow) shrink-0" />
                         {feature}
                       </motion.li>
                     ))}
@@ -156,12 +156,12 @@ function Topnotch() {
                 {/* Trust Indicators */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-center mt-12 pt-8 border-t border-white/10">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-(--neon-yellow) mb-1">50+</div>
+                    <div className="text-3xl font-bold text-(--neon-yellow) mb-1">8</div>
                     <div className="text-sm text-gray-400">Projects Delivered</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-(--neon-yellow) mb-1">30+</div>
-                    <div className="text-sm text-gray-400">Happy Clients</div>
+                    <div className="text-3xl font-bold text-(--neon-yellow) mb-1">1</div>
+                    <div className="text-sm text-gray-400">Happy Client</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-(--neon-yellow) mb-1">100%</div>

@@ -36,7 +36,7 @@ function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-[#0d0d0d] py-14 px-4 relative overflow-hidden">
       {/* Advanced Animated Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <motion.div
@@ -65,7 +65,7 @@ function HeroSection() {
       </div>
 
       <div className="max-w-7xl w-full relative z-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-8 mb-20 lg:mt-10">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-4 mb-10 lg:mt-6">
           
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
@@ -76,8 +76,8 @@ function HeroSection() {
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-linear-to-r from-(--neon-yellow)/20 to-purple-500/20 border border-(--neon-yellow)/30 mb-8 backdrop-blur-sm"
             >
               <Sparkles className="w-4 h-4 text-(--neon-yellow) animate-pulse" />
-              <span className="text-sm font-semibold bg-linear-to-r from-(--neon-yellow) to-white bg-clip-text text-transparent">
-                Full-Stack Developer &amp; Frontend Developer
+              <span className="text-sm font-bold uppercase tracking-widest bg-linear-to-r from-(--neon-yellow) to-white bg-clip-text text-transparent">
+                Expert Frontend Developer & Backend Enthusiast
               </span>
             </motion.div>
 
@@ -85,7 +85,7 @@ function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-[1.1]"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-[1.1]"
             >
               Crafting Digital
               <br />
@@ -102,9 +102,9 @@ function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-12 leading-relaxed"
             >
-              I&apos;m <span className="text-white font-bold">Araby Hossain Abid</span>, a passionate full-stack developer
-              specializing in building exceptional digital experiences with
-              <span className="text-(--neon-yellow) font-semibold"> React, Next.js, TypeScript</span>, and modern technologies.
+              I&apos;m <span className="text-white font-bold">Araby Hossain Abid</span>, a dedicated <span className="text-(--neon-yellow) font-bold">Frontend Expert</span>
+              specializing in building exceptional digital experiences while rapidly expanding my mastery into
+              <span className="text-(--neon-yellow) font-semibold"> Backend Development</span>.
             </motion.p>
 
             <motion.div
@@ -184,7 +184,7 @@ function HeroSection() {
               </div>
               <div>
                 <p className="text-xs text-gray-400 font-semibold mb-0.5">Backend</p>
-                <p className="text-sm text-white font-bold">Mastery</p>
+                <p className="text-sm text-white font-bold">Skilled</p>
               </div>
             </motion.div>
           </motion.div>

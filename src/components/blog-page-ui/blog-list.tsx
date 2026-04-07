@@ -74,7 +74,7 @@ const BlogList = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
+    <section className="min-h-screen bg-[#0d0d0d] py-16 px-4 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#deff00]/5 rounded-full blur-[100px] opacity-30" />
@@ -88,7 +88,7 @@ const BlogList = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Insights & <span className="text-[#deff00]">Thoughts</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">

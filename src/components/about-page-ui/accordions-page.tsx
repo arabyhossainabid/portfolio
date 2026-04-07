@@ -43,7 +43,7 @@ export default function AccordionsPages() {
   const router = useRouter();
 
   return (
-    <section className="bg-[#0d0d0d] py-20 px-4 relative overflow-hidden">
+    <section className="bg-[#0d0d0d] py-16 px-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#deff00]/5 rounded-full blur-[100px] opacity-30" />
@@ -65,7 +65,7 @@ export default function AccordionsPages() {
               <span className="text-sm text-gray-300">FAQ</span>
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Frequently Asked
               <br />
               <span className="text-[#deff00]">Questions</span>
@@ -105,7 +105,7 @@ export default function AccordionsPages() {
                     value={`item-${index + 1}`}
                     className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[#deff00]/30 transition-all"
                   >
-                    <AccordionTrigger className="text-lg font-semibold text-white px-6 py-5 hover:text-[#deff00] [&[data-state=open]]:text-[#deff00] transition-colors">
+                    <AccordionTrigger className="text-lg font-semibold text-white px-6 py-5 hover:text-[#deff00] data-[state=open]:text-[#deff00] transition-colors">
                       {faq.title}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-400 px-6 pb-5 leading-relaxed">

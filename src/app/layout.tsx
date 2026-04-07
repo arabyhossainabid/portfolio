@@ -21,14 +21,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Araby Hossain Abid - Full-Stack Developer",
-  description: "Skilled full-stack web developer specializing in Next.js, React, TypeScript, Node.js, and modern web technologies. Building fast, secure, and scalable applications.",
+  title: "Araby Hossain Abid - Frontend Expert & Full-Stack Developer",
+  description: "Expert Frontend Developer specializing in React, Next.js, and TypeScript, while building robust backend skills for full-stack excellence.",
   icons: { icon: "/images/logo.svg" },
-  keywords: ["Full-Stack Developer", "Next.js", "React", "TypeScript", "Web Development", "Araby Hossain Abid"],
+  keywords: ["Frontend Expert", "Next.js", "React", "TypeScript", "Frontend Developer", "Araby Hossain Abid"],
   authors: [{ name: "Araby Hossain Abid" }],
   openGraph: {
-    title: "Araby Hossain Abid - Full-Stack Developer",
-    description: "Skilled full-stack web developer specializing in modern web technologies",
+    title: "Araby Hossain Abid - Frontend Expert",
+    description: "Expert frontend developer building modern, responsive web experiences",
     type: "website",
     images: [
       {

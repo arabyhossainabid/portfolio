@@ -6,9 +6,9 @@ import { TrendingUp, Users, Award } from "lucide-react";
 
 export default function NumberSection() {
   const stats = [
-    { icon: Users, value: 60, suffix: "+", label: "Happy Customers", color: "#deff00" },
-    { icon: TrendingUp, value: 8, suffix: "K+", label: "Hours on Craft", color: "#deff00" },
-    { icon: Award, value: 4.9, suffix: "", label: "Review Rate", decimalPlaces: 1, color: "#deff00" },
+    { icon: Users, value: 1, suffix: "", label: "Happy Client", color: "#deff00" },
+    { icon: TrendingUp, value: 12, suffix: "K+", label: "Hours on Craft", color: "#deff00" },
+    { icon: Award, value: 5.0, suffix: "", label: "Review Rate", decimalPlaces: 1, color: "#deff00" },
   ];
 
   return (

@@ -15,7 +15,7 @@ import { ArrowRight, Github, Linkedin, Mail, Terminal, Code2, Cpu, Globe, Chevro
 
 function Banner() {
   const [showHyperspeed, setShowHyperspeed] = useState(false);
-  const words = ["Full-Stack Developer", "UI/UX Enthusiast", "Problem Solver", "Creative Thinker"];
+  const words = ["Frontend Expert", "UI/UX Enthusiast", "Creative Developer", "Problem Solver"];
 
   useEffect(() => {
     // Only load on client side after mount to avoid hydration issues
@@ -140,11 +140,11 @@ function Banner() {
               </motion.h2>
 
               <div className="animate-[fadeIn_0.5s_ease-out]">
-                <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white drop-shadow-2xl">
-                  FULL-STACK
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-white drop-shadow-2xl">
+                  FRONTEND
                   <br />
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-(--neon-yellow) via-white to-(--neon-yellow) bg-size-[200%_auto] animate-shine">
-                    DEVELOPER
+                    EXPERT
                   </span>
                 </h1>
               </div>

@@ -119,7 +119,7 @@ function AboutTopNotch() {
                   </div>
                 ))}
                 <div className="w-14 h-14 rounded-full border-4 border-[#0d0d0d] bg-[#deff00] flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">+10</span>
+                  <span className="text-black font-bold text-xs uppercase">Done</span>
                 </div>
               </div>
             </CardContent>

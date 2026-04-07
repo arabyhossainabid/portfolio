@@ -8,24 +8,24 @@ import { Card, CardContent } from "@/components/ui/card";
 const experiences = [
   {
     id: 1,
-    date: "Jan 2021 – Dec 2022",
-    company: "TechNova",
+    date: "2025 – Present",
+    company: "Freelance Client Project",
     role: "Frontend Developer",
-    description: "Worked on building responsive, user-friendly web applications using React, Next.js, and Tailwind CSS.",
+    description: "Successfully delivered a 100% complete frontend web application for a client. Built with React, Next.js, and Tailwind CSS — delivered on time with full client satisfaction.",
   },
   {
     id: 2,
-    date: "Jan 2020 – Dec 2020",
-    company: "PixelCraft",
-    role: "Junior Frontend Developer",
-    description: "Developed interactive UI components and assisted in optimizing website performance and responsiveness.",
+    date: "2024 – 2025",
+    company: "Personal Full-Stack Projects",
+    role: "Full-Stack Developer (Self-Directed)",
+    description: "Built 3 full-stack projects using Next.js, Node.js, Express, PostgreSQL, and Prisma ORM. Applied real-world backend skills including REST API design, database management, and deployment.",
   },
   {
     id: 3,
-    date: "Jun 2019 – Dec 2019",
-    company: "WebWorks",
-    role: "Frontend Intern",
-    description: "Collaborated with senior developers to implement modern UI features and improve user experience.",
+    date: "2023 – 2024",
+    company: "Frontend Development (Self-Study & Projects)",
+    role: "Frontend Expert",
+    description: "Mastered frontend development through intensive practice with React, TypeScript, GSAP animations, and modern UI libraries — completing multiple open-source and portfolio projects.",
   },
 ];
 
@@ -33,16 +33,16 @@ function Worked() {
   const router = useRouter();
 
   return (
-    <section className="bg-[#0d0d0d] py-20 px-4">
+    <section className="bg-[#0d0d0d] py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             I&apos;ve Worked with
             <br />
             <span className="text-[#deff00]">Amazing</span> Tech Companies

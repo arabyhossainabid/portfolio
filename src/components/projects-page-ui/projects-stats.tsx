@@ -7,15 +7,15 @@ import { Card, CardContent } from "@/components/ui/card";
 const stats = [
     {
         icon: Code,
-        value: "50+",
+        value: "8",
         label: "Projects Completed",
         description: "Successfully delivered"
     },
     {
         icon: Users,
-        value: "30+",
-        label: "Happy Clients",
-        description: "Worldwide satisfaction"
+        value: "1",
+        label: "Happy Client",
+        description: "Personalized collaboration"
     },
     {
         icon: Zap,
@@ -26,14 +26,14 @@ const stats = [
     {
         icon: Award,
         value: "2+",
-        label: "Years Experience",
-        description: "In web development"
+        label: "Year Experience",
+        description: "Web development journey"
     }
 ];
 
 export default function ProjectsStats() {
     return (
-        <section className="bg-[#0d0d0d] py-20 px-4">
+        <section className="bg-[#0d0d0d] py-16 px-4">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function ProjectsStats() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
                         Proven Track <span className="text-(--neon-yellow)">Record</span>
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
