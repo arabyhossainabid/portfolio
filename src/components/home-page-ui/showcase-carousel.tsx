@@ -9,44 +9,64 @@ import Image from "next/image";
 
 const projects = [
   {
+    id: 0,
+    title: "PropSphere Platform",
+    description: "Full-stack fractional real estate investment platform with real-time analytics and management.",
+    image: "/images/project-propsphere.png",
+    link: "https://propsphere.vercel.app/",
+    github: "https://github.com/arabyhossainabid",
+    tags: ["Next.js", "TypeScript", "Fintech"],
+    stats: { stars: 45, views: "2.8k", forks: 15 }
+  },
+  {
     id: 1,
     title: "Mojito - GSAP Portfolio",
-    description: "Stunning portfolio with advanced GSAP animations and smooth scroll effects",
+    description: "Premium portfolio featuring advanced GSAP animations and smooth scroll effects.",
     image: "/images/project-mojito.png",
     link: "https://mojito-ecru.vercel.app/",
-    github: "https://github.com/arabyhossainabid/gsap-mojito",
+    github: "https://github.com/arabyhossainabid/jsm_gsap_landing",
     tags: ["GSAP", "React", "Animation"],
-    stats: { stars: 24, views: "1.2k", forks: 8 }
+    stats: { stars: 38, views: "1.9k", forks: 12 }
   },
   {
     id: 2,
-    title: "Career Hub Platform",
-    description: "Job search platform with advanced filtering and application tracking",
-    image: "/images/project-career-hub.png",
-    link: "https://react-career-hub-three.vercel.app/",
-    github: "https://github.com/arabyhossainabid/react-career-hub",
-    tags: ["React", "UI/UX", "Platform"],
-    stats: { stars: 18, views: "980", forks: 5 }
+    title: "FayraShop - E-Commerce",
+    description: "Minimalist fashion e-commerce platform with optimized shopping experience.",
+    image: "/images/project-fayrashop.png",
+    link: "https://fayrashop.vercel.app/",
+    github: "https://github.com/Fayra-Tech/fayrashop",
+    tags: ["Next.js", "E-Commerce", "Tailwind"],
+    stats: { stars: 32, views: "1.5k", forks: 10 }
   },
   {
     id: 3,
-    title: "Medical Service Portal",
-    description: "Healthcare platform with appointment booking and patient management",
-    image: "/images/project-medical-service.png",
-    link: "/",
-    github: "#",
-    tags: ["Next.js", "Healthcare", "Forms"],
-    stats: { stars: 32, views: "1.5k", forks: 12 }
+    title: "FoodHub Zone",
+    description: "Full-stack food delivery platform with real-time order tracking and management.",
+    image: "/images/project-foodhub-zone.png",
+    link: "https://foodhubzone.vercel.app/",
+    github: "https://github.com/arabyhossainabid/FOODHUB-BACKEND",
+    tags: ["Next.js", "PostgreSQL", "Full-Stack"],
+    stats: { stars: 29, views: "1.2k", forks: 7 }
   },
   {
     id: 4,
+    title: "E-Commerce Dashboard",
+    description: "Real-time analytics dashboard for e-commerce inventory and sales management.",
+    image: "/images/project-fastefy.png",
+    link: "https://fastefy.com/",
+    github: "https://github.com/mdasif-me/fastefy-csr",
+    tags: ["React", "Dashboard", "PostgreSQL"],
+    stats: { stars: 27, views: "1.1k", forks: 6 }
+  },
+  {
+    id: 5,
     title: "Spylt Landing Page",
-    description: "Creative landing page with interactive GSAP animations",
+    description: "Creative landing page with deep GSAP integration and interactive parallax effects.",
     image: "/images/project-spylt.png",
     link: "https://spylt-bay.vercel.app/",
     github: "https://github.com/arabyhossainabid/gsap-spylt",
-    tags: ["GSAP", "Landing", "Creative"],
-    stats: { stars: 28, views: "1.1k", forks: 9 }
+    tags: ["GSAP", "Creative", "Landing"],
+    stats: { stars: 31, views: "1.4k", forks: 9 }
   },
 ];
 

@@ -1,11 +1,13 @@
 "use client";
 
 import { motion } from "motion/react";
+import AboutIntro from '@/components/about-page-ui/about-intro';
 import AboutBanner from '@/components/about-page-ui/about-banner';
 import AboutTopNotch from '@/components/about-page-ui/about-top-notch';
 import AccordionsPages from '@/components/about-page-ui/accordions-page';
 import NumberSection from '@/components/about-page-ui/number-section';
 import Worked from '@/components/about-page-ui/worked';
+import Education from '@/components/about-page-ui/education';
 import SomthingSection from '@/components/home-page-ui/somthing-section';
 
 // Reusable animation wrapper
@@ -25,7 +27,11 @@ export default function AboutPage() {
     <section className="overflow-hidden">
       <AboutBanner />
 
-      <FadeUp delay={0}>
+      <FadeUp delay={0.05}>
+        <AboutIntro />
+      </FadeUp>
+
+      <FadeUp delay={0.1}>
         <NumberSection />
       </FadeUp>
 
@@ -38,6 +44,10 @@ export default function AboutPage() {
       </FadeUp>
 
       <FadeUp delay={0.2}>
+        <Education />
+      </FadeUp>
+
+      <FadeUp delay={0.25}>
         <AccordionsPages />
       </FadeUp>
 

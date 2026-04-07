@@ -10,6 +10,18 @@ const categories = ["All", "React", "Next.js", "GSAP", "Full-Stack"];
 
 const projects = [
     {
+        id: 0,
+        title: "PropSphere Platform",
+        description: "A comprehensive fractional real estate investment platform with real-time analytics, property management, and social integration.",
+        image: "/images/project-propsphere.png",
+        link: "https://propsphere.vercel.app/",
+        github: "https://github.com/arabyhossainabid",
+        category: "Full-Stack",
+        tags: ["Next.js", "TypeScript", "Real-Estate", "Fintech"],
+        challenges: "Ensuring secure and synchronized financial transactions across distributed systems while providing a real-time responsive UI for investors.",
+        futurePlans: "Integrating AI-driven property valuation and a secondary market for trading real estate shares."
+    },
+    {
         id: 1,
         title: "Mojito - GSAP Portfolio",
         description: "A stunning portfolio website featuring advanced GSAP animations, smooth scroll effects, and interactive transitions.",
@@ -22,28 +34,16 @@ const projects = [
         futurePlans: "Implementing a dynamic 3D background using Three.js and adding a headless CMS for blog management."
     },
     {
-        id: 2,
-        title: "Career Hub Platform",
-        description: "A comprehensive job search platform with advanced filtering and application tracking.",
-        image: "/images/project-career-hub.png",
-        link: "https://react-career-hub-three.vercel.app/",
-        github: "https://github.com/arabyhossainabid/react-career-hub",
-        category: "React",
-        tags: ["React", "UI/UX", "Platform", "Responsive"],
-        challenges: "Managing complex states for multiple filters and ensuring a seamless experience when handling large job lists.",
-        futurePlans: "Integrating AI-based job recommendations and a real-time messaging system for employers and candidates."
-    },
-    {
         id: 3,
-        title: "Medical Service Portal",
-        description: "Healthcare platform featuring appointment booking and patient management.",
-        image: "/images/project-medical-service.png",
-        link: "/",
-        github: "#",
+        title: "FayraShop - E-Commerce",
+        description: "A premium e-commerce platform built with Next.js, featuring a clean minimalist design, product filtering, and smooth shopping experience.",
+        image: "/images/project-fayrashop.png",
+        link: "https://fayrashop.vercel.app/",
+        github: "https://github.com/Fayra-Tech/fayrashop",
         category: "Next.js",
-        tags: ["Next.js", "Healthcare", "Forms", "Validation"],
-        challenges: "Creating a secure and privacy-compliant way to handle sensitive patient data while maintaining ease of use.",
-        futurePlans: "Adding video consultation features and integration with wearable health tracking devices."
+        tags: ["Next.js", "E-Commerce", "Tailwind", "Responsive"],
+        challenges: "Creating a seamless mobile-first shopping experience with optimized image loading and dynamic product management.",
+        futurePlans: "Integrating Stripe for secure payments and a multi-vendor dashboard for sellers."
     },
     {
         id: 5,
@@ -75,11 +75,23 @@ const projects = [
         description: "Full-stack food delivery platform with real-time order management.",
         image: "/images/project-foodhub-zone.png",
         link: "https://foodhubzone.vercel.app/",
-        github: "https://github.com/arabyhossainabid/foodhub",
+        github: "https://github.com/arabyhossainabid/FOODHUB-BACKEND",
         category: "Full-Stack",
         tags: ["Next.js", "PostgreSQL", "prisma io", "shadcn ui"],
         challenges: "Designing a scalable order state machine that handles edge cases like order cancellations and restaurant busy status.",
         futurePlans: "Implementing an driver tracking app and a multi-vendor payout system using Stripe connect."
+    },
+    {
+        id: 2,
+        title: "Career Hub Platform",
+        description: "A comprehensive job search platform with advanced filtering and application tracking.",
+        image: "/images/project-career-hub.png",
+        link: "https://react-career-hub-three.vercel.app/",
+        github: "https://github.com/arabyhossainabid/react-career-hub",
+        category: "React",
+        tags: ["React", "UI/UX", "Platform", "Responsive"],
+        challenges: "Managing complex states for multiple filters and ensuring a seamless experience when handling large job lists.",
+        futurePlans: "Integrating AI-based job recommendations and a real-time messaging system for employers and candidates."
     }
 ];
 
@@ -87,6 +99,7 @@ export default function ProjectsGrid() {
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [hoveredId, setHoveredId] = useState<number | null>(null);
     const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+    const [showAll, setShowAll] = useState(false);
 
     const filteredProjects = React.useMemo(() =>
         selectedCategory === "All"
@@ -94,6 +107,8 @@ export default function ProjectsGrid() {
             : projects.filter(p => p.category === selectedCategory),
         [selectedCategory]
     );
+
+    const displayProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);
 
     return (
         <section className="bg-[#0d0d0d] py-16 px-4 relative overflow-hidden">
@@ -121,7 +136,10 @@ export default function ProjectsGrid() {
                         {categories.map((category) => (
                             <motion.button
                                 key={category}
-                                onClick={() => setSelectedCategory(category)}
+                                onClick={() => {
+                                    setSelectedCategory(category);
+                                    setShowAll(true);
+                                }}
                                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${selectedCategory === category
                                     ? "bg-(--neon-yellow) text-black shadow-[0_0_20px_0px_var(--neon-yellow)]"
                                     : "bg-white/5 text-gray-300 border border-white/10 hover:border-(--neon-yellow)/50"
@@ -135,7 +153,7 @@ export default function ProjectsGrid() {
 
                 <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <AnimatePresence mode="popLayout">
-                        {filteredProjects.map((project, index) => (
+                        {displayProjects.map((project, index) => (
                             <motion.div
                                 key={project.id}
                                 layout
@@ -181,6 +199,22 @@ export default function ProjectsGrid() {
                         ))}
                     </AnimatePresence>
                 </motion.div>
+
+                {!showAll && filteredProjects.length > 6 && (
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mt-12"
+                    >
+                        <Button 
+                            onClick={() => setShowAll(true)}
+                            className="bg-(--neon-yellow) text-black font-bold px-8 py-4 rounded-full hover:shadow-[0_0_20px_var(--neon-yellow)] transition-all"
+                        >
+                            View All Projects
+                        </Button>
+                    </motion.div>
+                )}
             </div>
 
             {/* Project Modal */}

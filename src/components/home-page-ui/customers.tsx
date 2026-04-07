@@ -192,7 +192,7 @@ export default function Customers() {
                 {[
                   { value: "5.0/5", label: "Average Rating" },
                   { value: "1", label: "Happy Client" },
-                  { value: "3", label: "Projects Completed" },
+                  { value: "8", label: "Projects Completed" },
                   { value: "100%", label: "Satisfaction" },
                 ].map((stat, i) => (
                   <motion.div

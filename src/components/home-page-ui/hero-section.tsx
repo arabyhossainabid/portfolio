@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { useRouter } from 'next/navigation';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPostgresql, SiPrisma, SiExpress } from 'react-icons/si';
-import { Sparkles, Download, Play, ArrowRight } from "lucide-react";
+import { Sparkles, Download, Play, ArrowRight, Github, Linkedin, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -42,21 +42,21 @@ function HeroSection() {
         <motion.div
           animate={{ backgroundPosition: ['0px 0px', '80px 80px'] }}
           transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
-          className="absolute inset-0 bg-[linear-gradient(to_right,#deff0008_1px,transparent_1px),linear-gradient(to_bottom,#deff0008_1px,transparent_1px)] bg-[size:80px_80px]"
+          className="absolute inset-0 bg-[linear-gradient(to_right,#deff0008_1px,transparent_1px),linear-gradient(to_bottom,#deff0008_1px,transparent_1px)] bg-size-[80px_80px]"
         />
-        
+
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-[10%] right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(222,255,0,0.05),transparent)]"
         />
-        
+
         <motion.div
           animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.6, 0.3], x: [0, 50, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           className="absolute bottom-[10%] left-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(168,85,247,0.05),transparent)]"
         />
-        
+
         <motion.div
           animate={{ scale: [1, 1.1, 1], opacity: [0.4, 0.7, 0.4], y: [0, -50, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
@@ -66,7 +66,7 @@ function HeroSection() {
 
       <div className="max-w-7xl w-full relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-4 mb-10 lg:mt-6">
-          
+
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             <motion.div
@@ -89,7 +89,7 @@ function HeroSection() {
             >
               Crafting Digital
               <br />
-              <span className="bg-linear-to-r from-(--neon-yellow) via-yellow-300 to-(--neon-yellow) bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+              <span className="bg-linear-to-r from-(--neon-yellow) via-yellow-300 to-(--neon-yellow) bg-clip-text text-transparent animate-gradient bg-size-[200%_auto]">
                 Masterpieces
               </span>
               <br />
@@ -131,6 +131,39 @@ function HeroSection() {
                 Download CV
               </Button>
             </motion.div>
+
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="https://github.com/arabyhossainabid"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <Github className="w-6 h-6 text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/araby-hossain-abid-6790a5318/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <Linkedin className="w-6 h-6 text-white" />
+              </a>
+              <a
+                href="https://www.facebook.com/araby.hossain.abid"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <Facebook className="w-6 h-6 text-white" />
+              </a>
+            </motion.div>
           </div>
 
           {/* Profile Image Space */}
@@ -144,19 +177,19 @@ function HeroSection() {
             <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
               <div className="w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] bg-(--neon-yellow)/10 rounded-full blur-[80px]" />
             </div>
-            
+
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-2 border-white/10 shadow-[0_0_50px_rgba(222,255,0,0.15)] ring-4 ring-[#0d0d0d] z-10 group">
               <Image
-                src="/images/abid.jpg"
+                src="/images/profile.png"
                 alt="Araby Hossain Abid - Professional Photo"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 rounded-full box-shadow-inner opacity-0 transition-opacity group-hover:opacity-100 bg-linear-to-t from-black/40 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 rounded-full opacity-0 transition-opacity group-hover:opacity-100 bg-linear-to-t from-black/40 to-transparent pointer-events-none" />
             </div>
 
             {/* Floating Badges */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
@@ -172,7 +205,7 @@ function HeroSection() {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
@@ -188,7 +221,7 @@ function HeroSection() {
               </div>
             </motion.div>
           </motion.div>
-          
+
         </div>
 
         <motion.div

@@ -311,7 +311,7 @@ const JourneyStackCard: React.FC<StackCardProps> = ({ item, i, progress, range, 
                     className="flex items-center gap-3"
                   >
                     <div
-                      className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
+                      className="w-6 h-6 rounded-lg flex items-center justify-center shrink-0"
                       style={{ backgroundColor: `${item.color}20` }}
                     >
                       <CheckCircle2 className="w-4 h-4" style={{ color: item.color }} />
